@@ -1,11 +1,18 @@
-%% FU Berlin Letter Header Setup
+%% FU Berlin Letter Header Setup using textpos
 
-% Set up fancy header with logo and sender information
-\fancyhead[L]{\includegraphics[width=0.25\textwidth]{$if(sender-logo)$$sender-logo$$else$fu-logo$endif$}}
-\fancyhead[R]{
+%% Define boxes for letter heads
+\newsavebox{\fublogo}
+\newsavebox{\fubsender}
+
+%% Define letterhead logo
+\sbox{\fublogo}{\hbox{
+  \includegraphics[width=0.25\textwidth]{$if(sender-logo)$$sender-logo$$else$fu-logo$endif$}
+}}
+
+%% Define letterhead sender information
+\sbox{\fubsender}{\parbox{6cm}{
   \small
   \begin{tabular}{@{}r@{}}
-    \rule{0pt}{1cm} \\[-0.8cm]
     $if(sender-faculty)$$sender-faculty$ \\$endif$
     $if(sender-institute)$$sender-institute$ \\$endif$
     $if(sender-department)$$sender-department$ \\$endif$
@@ -18,7 +25,7 @@
     \\
     \today \\
   \end{tabular}
-}
+}}
 
 % Set date or use today
 $if(letter-date)$
@@ -27,7 +34,17 @@ $else$
 \date{\today}
 $endif$
 
-\vspace{2cm}
+%% Create vertical space for header area
+\mbox{}\vspace{2cm}
+
+%% Position logo and sender on page (overlay on top of space)
+\begin{textblock}{8}(2,2)
+  \usebox{\fublogo}
+\end{textblock}
+
+\begin{textblock}{6}(14,2)
+  \usebox{\fubsender}
+\end{textblock}
 
 % Recipient address
 $if(recipient-organization)$$recipient-organization$\\$endif$
