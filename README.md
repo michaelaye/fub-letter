@@ -107,7 +107,8 @@ Your letter content goes here.
 - `recipient-city` - Postal code and city
 
 **Letter fields**:
-- `letter-subject` - Subject line
+- `letter-subject` - Subject line (bold by default)
+- `letter-subject-plain` - Set to `true` for plain (non-bold) subject line
 - `letter-date` - Date (DD.MM.YYYY or YYYY-MM-DD format)
 - `letter-lang` - Language code ("en" or "de")
 - `letter-greeting` - Opening salutation
@@ -132,6 +133,15 @@ letter-closing: "Mit freundlichen Grüßen"
 ```
 
 ## Customization
+
+### Subject Line Formatting
+
+By default, the subject line appears in bold. To use plain (non-bold) formatting:
+
+```yaml
+letter-subject: "Application for Research Position"
+letter-subject-plain: true
+```
 
 ### Using Your Own Logo
 

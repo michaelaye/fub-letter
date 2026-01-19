@@ -57,7 +57,11 @@ $if(recipient-city)$$recipient-city$$endif$
 
 % Subject line
 $if(letter-subject)$
+$if(letter-subject-plain)$
+Subject: $letter-subject$
+$else$
 **Subject: $letter-subject$**
+$endif$
 $endif$
 
 \vspace{0.5cm}
