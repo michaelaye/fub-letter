@@ -15,6 +15,7 @@ recipient-address: "Street Address"
 recipient-city: "Postal Code City"
 
 letter-subject: "Subject Line"
+# letter-subject-plain: true  # Uncomment for plain (non-bold) subject line
 letter-date: "2026-01-18"
 letter-lang: "en"
 letter-greeting: "Dear Recipient Name,"
