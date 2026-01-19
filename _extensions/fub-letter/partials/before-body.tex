@@ -1,0 +1,57 @@
+%% FU Berlin Letter Header Setup
+
+% Set up fancy header with logo and sender information
+\fancyhead[L]{\includegraphics[width=0.25\textwidth]{$if(sender-logo)$$sender-logo$$else$fu-logo$endif$}}
+\fancyhead[R]{
+  \small
+  \begin{tabular}{@{}r@{}}
+    \rule{0pt}{1cm} \\[-0.8cm]
+    $if(sender-faculty)$$sender-faculty$ \\$endif$
+    $if(sender-institute)$$sender-institute$ \\$endif$
+    $if(sender-department)$$sender-department$ \\$endif$
+    \\
+    $if(sender-name)$$sender-name$ \\$endif$
+    $if(sender-address)$$sender-address$ \\$endif$
+    $if(sender-city)$$sender-city$ \\$endif$
+    $if(sender-phone)$T $sender-phone$ \\$endif$
+    $if(sender-email)$$sender-email$ \\$endif$
+    \\
+    \today \\
+  \end{tabular}
+}
+
+% Set date or use today
+$if(letter-date)$
+\date{$letter-date$}
+$else$
+\date{\today}
+$endif$
+
+\vspace{2cm}
+
+% Recipient address
+$if(recipient-organization)$$recipient-organization$\\$endif$
+$if(recipient-department)$$recipient-department$\\$endif$
+$if(recipient-name)$$recipient-name$\\$endif$
+$if(recipient-address)$$recipient-address$\\$endif$
+$if(recipient-city)$$recipient-city$$endif$
+
+\vspace{1cm}
+
+% Subject line
+$if(letter-subject)$
+**Subject: $letter-subject$**
+$endif$
+
+\vspace{0.5cm}
+
+% Opening salutation
+$if(letter-greeting)$
+$letter-greeting$
+$else$
+Dear Sir or Madam,
+$endif$
+
+\vspace{0.5cm}
+
+<!-- LETTER CONTENT STARTS HERE -->
