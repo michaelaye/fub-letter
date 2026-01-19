@@ -109,7 +109,7 @@ Your letter content goes here.
 **Letter fields**:
 - `letter-subject` - Subject line (bold by default)
 - `letter-subject-plain` - Set to `true` for plain (non-bold) subject line
-- `letter-date` - Date (DD.MM.YYYY or YYYY-MM-DD format)
+- `letter-date` - Date (DD.MM.YYYY or YYYY-MM-DD format). Omit this field to automatically use today's date.
 - `letter-lang` - Language code ("en" or "de")
 - `letter-greeting` - Opening salutation
 - `letter-closing` - Closing salutation
