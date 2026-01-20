@@ -58,9 +58,9 @@ $if(recipient-city)$$recipient-city$$endif$
 % Subject line
 $if(letter-subject)$
 $if(letter-subject-plain)$
-Subject: $letter-subject$
+$if(is-german)$Betreff:$else$Subject:$endif$ $letter-subject$
 $else$
-\textbf{Subject: $letter-subject$}
+\textbf{$if(is-german)$Betreff:$else$Subject:$endif$ $letter-subject$}
 $endif$
 $endif$
 

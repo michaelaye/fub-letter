@@ -116,11 +116,11 @@ Your letter content goes here.
 
 ### Multi-Language Support
 
-The template supports English and German letters. The `letter-lang` field automatically sets appropriate default greetings and closings:
+The template supports English and German letters. The `letter-lang` field automatically sets appropriate language-specific text:
 
 **Language defaults:**
-- `letter-lang: "en"` → "Dear Sir or Madam," / "Sincerely,"
-- `letter-lang: "de"` → "Sehr geehrte Damen und Herren," / "Mit freundlichen Grüßen"
+- `letter-lang: "en"` → Subject label: "Subject:" / Greeting: "Dear Sir or Madam," / Closing: "Sincerely,"
+- `letter-lang: "de"` → Subject label: "Betreff:" / Greeting: "Sehr geehrte Damen und Herren," / Closing: "Mit freundlichen Grüßen"
 
 **English letter with custom greeting:**
 ```yaml
@@ -218,6 +218,11 @@ Additional inspiration and structure were drawn from [Mickaël Canouil's quarto-
 Original concept inspirations include [Rob Hyndman's MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates/tree/master/inst/rmarkdown/templates/Letter).
 
 ## Version History
+
+- **1.1.1** (2026-01-20): Language-aware subject labels
+  - Subject line label now changes based on language
+  - German letters: "Betreff:" instead of "Subject:"
+  - English letters: "Subject:" (unchanged)
 
 - **1.1.0** (2026-01-20): Language-aware defaults
   - Added Lua filter for language detection
