@@ -1,0 +1,82 @@
+%% FU Berlin Letter Header Setup using textpos
+
+%% Define boxes for letter heads
+\newsavebox{\fublogo}
+\newsavebox{\fubsender}
+
+%% Define letterhead logo
+\sbox{\fublogo}{\hbox{
+  \includegraphics[width=0.25\textwidth]{$if(sender-logo)$$sender-logo$$else$fu-logo$endif$}
+}}
+
+%% Define letterhead sender information
+\sbox{\fubsender}{\parbox{6cm}{
+  \small
+  \begin{tabular}{@{}r@{}}
+    $if(sender-faculty)$$sender-faculty$ \\$endif$
+    $if(sender-institute)$$sender-institute$ \\$endif$
+    $if(sender-department)$$sender-department$ \\$endif$
+    \\
+    $if(sender-name)$$sender-name$ \\$endif$
+    $if(sender-address)$$sender-address$ \\$endif$
+    $if(sender-city)$$sender-city$ \\$endif$
+    $if(sender-phone)$T $sender-phone$ \\$endif$
+    $if(sender-email)$$sender-email$ \\$endif$
+    \\
+    \today \\
+  \end{tabular}
+}}
+
+% Set date or use today
+$if(letter-date)$
+\date{$letter-date$}
+$else$
+\date{\today}
+$endif$
+
+%% Create vertical space for header area
+\mbox{}\vspace{2cm}
+
+%% Position logo and sender on page (overlay on top of space)
+\begin{textblock}{8}(2,2)
+  \usebox{\fublogo}
+\end{textblock}
+
+\begin{textblock}{6}(14,2)
+  \usebox{\fubsender}
+\end{textblock}
+
+% Recipient address
+$if(recipient-organization)$$recipient-organization$\\$endif$
+$if(recipient-department)$$recipient-department$\\$endif$
+$if(recipient-name)$$recipient-name$\\$endif$
+$if(recipient-address)$$recipient-address$\\$endif$
+$if(recipient-city)$$recipient-city$$endif$
+
+\vspace{1cm}
+
+% Subject line
+$if(letter-subject)$
+$if(letter-subject-plain)$
+$if(is-german)$Betreff:$else$Subject:$endif$ $letter-subject$
+$else$
+\textbf{$if(is-german)$Betreff:$else$Subject:$endif$ $letter-subject$}
+$endif$
+$endif$
+
+\vspace{0.5cm}
+
+% Opening salutation
+$if(letter-greeting)$
+$letter-greeting$
+$else$
+$if(is-german)$
+Sehr geehrte Damen und Herren,
+$else$
+Dear Sir or Madam,
+$endif$
+$endif$
+
+\vspace{0.5cm}
+
+<!-- LETTER CONTENT STARTS HERE -->
