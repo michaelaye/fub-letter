@@ -200,7 +200,7 @@ K.-Michael Aye
 
 ## Credits
 
-This template was forked from and adapted from [juliantao/qletter](https://github.com/juliantao/qletter).
+This template was forked from and adapted from [Julian Tao's qletter](https://github.com/juliantao/qletter).
 
 Additional inspiration and structure were drawn from [Mickaël Canouil's quarto-letter extension](https://github.com/mcanouil/quarto-letter).
 
