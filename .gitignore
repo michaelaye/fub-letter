@@ -12,3 +12,12 @@ test-*.qmd
 
 # Other artifacts
 texput.log
+
+# IDE config
+/.luarc.json
+
+# Word templates and stray logos
+*.dotx
+fu-logo.pdf
+logo.pdf
+signature.pdf
