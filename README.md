@@ -58,27 +58,27 @@ The template uses a flat YAML structure for all fields:
 ```yaml
 ---
 # Sender information (your details)
-sender-name: "Dr. K.-Michael Aye"
-sender-department: "FR Planetologie und Fernerkundung"
-sender-institute: "Institut f. Geologische Wissenschaften"
-sender-faculty: "Fachbereich Geowissenschaften"
-sender-address: "Malteserstr. 74-100"
-sender-city: "12249 Berlin"
-sender-phone: "+49 30 83851076"
-sender-email: "michael.aye@fu-berlin.de"
+sender-name: "Dr. Your Name"
+sender-department: "Your Department"
+sender-institute: "Your Institute"
+sender-faculty: "Your Faculty"
+sender-address: "Your Street Address"
+sender-city: "Postal Code City"
+sender-phone: "+49 30 12345678"
+sender-email: "your.email@fu-berlin.de"
 
 # Recipient information
-recipient-organization: "University of Bern"
-recipient-department: "Physics Institute"
-recipient-name: "Prof. Dr. Kathrin Altwegg"
-recipient-address: "Sidlerstrasse 5"
-recipient-city: "3012 Bern, Switzerland"
+recipient-organization: "Organization Name"
+recipient-department: "Department Name"
+recipient-name: "Recipient Name"
+recipient-address: "Street Address"
+recipient-city: "Postal Code City, Country"
 
 # Letter metadata
-letter-subject: "Application for Research Position"
-letter-date: "2026-01-18"
+letter-subject: "Subject Line"
+#letter-date: "2026-01-18"  # Omit this field to automatically use today's date
 letter-lang: "en"
-letter-greeting: "Dear Prof. Dr. Altwegg,"
+letter-greeting: "Dear Recipient Name,"
 letter-closing: "Sincerely,"
 
 format: fub-letter-pdf
