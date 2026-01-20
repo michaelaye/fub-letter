@@ -3,7 +3,9 @@
 # Quarto build artifacts
 README.html
 README_files/
-_output/
+_output/*.tex
+_output/*.log
+_output/test-*.pdf
 
 # Test files
 test-*.qmd
