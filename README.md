@@ -200,9 +200,11 @@ K.-Michael Aye
 
 ## Credits
 
-This template was adapted from [juliantao/qletter](https://github.com/juliantao/qletter).
+This template was forked from and adapted from [juliantao/qletter](https://github.com/juliantao/qletter).
 
-Original inspirations were drawn from [Rob Hyndman's MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates/tree/master/inst/rmarkdown/templates/Letter) and the [quarto-letter extension](https://github.com/mcanouil/quarto-letter).
+Additional inspiration and structure were drawn from [Mickaël Canouil's quarto-letter extension](https://github.com/mcanouil/quarto-letter).
+
+Original concept inspirations include [Rob Hyndman's MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates/tree/master/inst/rmarkdown/templates/Letter).
 
 ## Version History
 
