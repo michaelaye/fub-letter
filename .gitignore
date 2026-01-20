@@ -1,2 +1,12 @@
 .DS_Store
 
+# Quarto build artifacts
+README.html
+README_files/
+_output/
+
+# Test files
+test-*.qmd
+
+# Other artifacts
+texput.log

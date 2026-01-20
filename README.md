@@ -110,26 +110,37 @@ Your letter content goes here.
 - `letter-subject` - Subject line (bold by default)
 - `letter-subject-plain` - Set to `true` for plain (non-bold) subject line
 - `letter-date` - Date (DD.MM.YYYY or YYYY-MM-DD format). Omit this field to automatically use today's date.
-- `letter-lang` - Language code ("en" or "de")
-- `letter-greeting` - Opening salutation
-- `letter-closing` - Closing salutation
+- `letter-lang` - Language code ("en" or "de") that sets default greeting and closing
+- `letter-greeting` - Opening salutation (optional - overrides language default)
+- `letter-closing` - Closing salutation (optional - overrides language default)
 
 ### Multi-Language Support
 
-The template supports English and German letters. Set the language using `letter-lang`:
+The template supports English and German letters. The `letter-lang` field automatically sets appropriate default greetings and closings:
 
-**English letter:**
+**Language defaults:**
+- `letter-lang: "en"` → "Dear Sir or Madam," / "Sincerely,"
+- `letter-lang: "de"` → "Sehr geehrte Damen und Herren," / "Mit freundlichen Grüßen"
+
+**English letter with custom greeting:**
 ```yaml
 letter-lang: "en"
 letter-greeting: "Dear Prof. Dr. Smith,"
-letter-closing: "Sincerely,"
+# Closing will use default: "Sincerely,"
 ```
 
-**German letter:**
+**German letter with custom greeting:**
 ```yaml
 letter-lang: "de"
 letter-greeting: "Sehr geehrte Frau Prof. Dr. Müller,"
-letter-closing: "Mit freundlichen Grüßen"
+# Closing will use default: "Mit freundlichen Grüßen"
+```
+
+**Override both greeting and closing:**
+```yaml
+letter-lang: "de"
+letter-greeting: "Liebe Kolleginnen und Kollegen,"
+letter-closing: "Herzliche Grüße"
 ```
 
 ## Customization
@@ -207,6 +218,13 @@ Additional inspiration and structure were drawn from [Mickaël Canouil's quarto-
 Original concept inspirations include [Rob Hyndman's MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates/tree/master/inst/rmarkdown/templates/Letter).
 
 ## Version History
+
+- **1.1.0** (2026-01-20): Language-aware defaults
+  - Added Lua filter for language detection
+  - Implemented automatic greeting/closing defaults based on `letter-lang`
+  - German defaults: "Sehr geehrte Damen und Herren," / "Mit freundlichen Grüßen"
+  - English defaults: "Dear Sir or Madam," / "Sincerely,"
+  - User-provided values override language defaults
 
 - **1.0.0** (2026-01-18): Initial release
   - FU Berlin corporate design

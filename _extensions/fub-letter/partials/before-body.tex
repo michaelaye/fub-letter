@@ -70,7 +70,11 @@ $endif$
 $if(letter-greeting)$
 $letter-greeting$
 $else$
+$if(is-german)$
+Sehr geehrte Damen und Herren,
+$else$
 Dear Sir or Madam,
+$endif$
 $endif$
 
 \vspace{0.5cm}
