@@ -18,13 +18,30 @@ The template uses the FU Berlin brand colors, fonts, and logo, with a profession
 
 ## Creating a New Letter
 
-You can use this as a template to create a letter with FU Berlin branding. To do this, use the following command:
+You can use this as a template to create a letter with FU Berlin branding. The template is available in three variants:
+
+### German Template (Recommended for German Letters)
+Pre-filled with German example text and language settings:
+
+```bash
+quarto use template michaelaye/fub-letter/german
+```
+
+### English Template (Recommended for English Letters)
+Pre-filled with English example text and language settings:
+
+```bash
+quarto use template michaelaye/fub-letter/english
+```
+
+### Generic Template
+Minimal placeholder text - customize to your preference:
 
 ```bash
 quarto use template michaelaye/fub-letter
 ```
 
-This will install the extension and create an example qmd file.
+All variants include the same extension and support both German and English through the `letter-lang` field.
 
 ## Installation For Existing Document
 
@@ -218,6 +235,12 @@ Additional inspiration and structure were drawn from [Mickaël Canouil's quarto-
 Original concept inspirations include [Rob Hyndman's MonashEBSTemplates](https://github.com/robjhyndman/MonashEBSTemplates/tree/master/inst/rmarkdown/templates/Letter).
 
 ## Version History
+
+- **1.2.0** (2026-01-20): Multiple template variants
+  - Added German template variant: `quarto use template michaelaye/fub-letter/german`
+  - Added English template variant: `quarto use template michaelaye/fub-letter/english`
+  - Each variant includes pre-filled example text in the appropriate language
+  - Generic template still available at root: `quarto use template michaelaye/fub-letter`
 
 - **1.1.1** (2026-01-20): Language-aware subject labels
   - Subject line label now changes based on language

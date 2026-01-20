@@ -1,0 +1,39 @@
+---
+sender-name: "Dr. Max Mustermann"
+sender-department: "FR Beispielabteilung"
+sender-institute: "Institut für Beispielforschung"
+sender-faculty: "Fachbereich Beispielwissenschaften"
+sender-address: "Musterstraße 123"
+sender-city: "14195 Berlin"
+sender-phone: "+49 30 12345678"
+sender-email: "max.mustermann@fu-berlin.de"
+
+recipient-organization: "Beispielorganisation"
+recipient-department: "Abteilung Forschung"
+recipient-name: "Prof. Dr. Erika Beispiel"
+recipient-address: "Beispielweg 45"
+recipient-city: "12345 Musterstadt"
+
+letter-subject: "Bewerbung um eine Forschungsposition"
+letter-lang: "de"
+
+format: fub-letter-pdf
+---
+
+Sehr geehrte Frau Prof. Dr. Beispiel,
+
+ich beziehe mich auf Ihre Stellenausschreibung für eine Postdoc-Position in der Abteilung für Beispielforschung. Mit großem Interesse möchte ich mich auf diese Position bewerben.
+
+Derzeit arbeite ich als wissenschaftlicher Mitarbeiter am Institut für Beispielforschung an der Freien Universität Berlin. Meine Forschungsschwerpunkte umfassen **experimentelle Methoden** und *theoretische Modellierung* in der Beispielwissenschaft.
+
+In den letzten Jahren konnte ich:
+
+- Mehrere Forschungsprojekte erfolgreich durchführen
+- Publikationen in renommierten Fachzeitschriften veröffentlichen
+- Interdisziplinäre Zusammenarbeit fördern
+
+Ich würde mich sehr freuen, meine Expertise in Ihr Team einbringen zu können und gemeinsam an innovativen Forschungsfragen zu arbeiten.
+
+Für ein persönliches Gespräch stehe ich Ihnen gerne zur Verfügung.
+
+Mit freundlichen Grüßen

@@ -1,0 +1,39 @@
+---
+sender-name: "Dr. Jane Smith"
+sender-department: "Department of Example Research"
+sender-institute: "Institute for Sample Studies"
+sender-faculty: "Faculty of Example Sciences"
+sender-address: "Sample Street 123"
+sender-city: "14195 Berlin"
+sender-phone: "+49 30 12345678"
+sender-email: "jane.smith@fu-berlin.de"
+
+recipient-organization: "Example University"
+recipient-department: "Department of Research"
+recipient-name: "Prof. Dr. John Doe"
+recipient-address: "Research Avenue 45"
+recipient-city: "12345 Sample City"
+
+letter-subject: "Application for Research Position"
+letter-lang: "en"
+
+format: fub-letter-pdf
+---
+
+Dear Prof. Dr. Doe,
+
+I am writing to express my strong interest in the postdoctoral research position advertised by your department. I believe my research experience and expertise make me an excellent candidate for this role.
+
+Currently, I work as a research associate at the Institute for Sample Studies at Freie Universität Berlin. My research focuses on **experimental methods** and *theoretical modeling* in the field of example sciences.
+
+Over the past few years, I have:
+
+- Successfully conducted multiple research projects
+- Published articles in renowned academic journals
+- Fostered interdisciplinary collaboration
+
+I would be delighted to contribute my expertise to your team and work together on innovative research questions.
+
+I am available for an interview at your convenience and look forward to discussing this opportunity with you.
+
+Sincerely,
