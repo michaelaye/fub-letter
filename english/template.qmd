@@ -16,6 +16,8 @@ recipient-city: "12345 Sample City"
 
 letter-subject: "Application for Research Position"
 letter-lang: "en"
+#letter-greeting: "Dear Prof. Dr. Smith,"  # Optional - overrides default "Dear Sir or Madam,"
+#letter-closing: "Best regards,"  # Optional - overrides default "Sincerely,"
 
 format: fub-letter-pdf
 ---
@@ -35,5 +37,3 @@ Over the past few years, I have:
 I would be delighted to contribute my expertise to your team and work together on innovative research questions.
 
 I am available for an interview at your convenience and look forward to discussing this opportunity with you.
-
-Sincerely,

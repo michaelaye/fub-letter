@@ -16,6 +16,8 @@ recipient-city: "12345 Musterstadt"
 
 letter-subject: "Bewerbung um eine Forschungsposition"
 letter-lang: "de"
+#letter-greeting: "Liebe Kolleginnen und Kollegen,"  # Optional - überschreibt Standard
+#letter-closing: "Herzliche Grüße"  # Optional - überschreibt Standard "Mit freundlichen Grüßen"
 
 format: fub-letter-pdf
 ---
