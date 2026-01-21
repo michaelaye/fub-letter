@@ -16,14 +16,12 @@ recipient-city: "12345 Sample City"
 
 letter-subject: "Application for Research Position"
 letter-lang: "en"
-#letter-greeting: "Dear Prof. Dr. Smith,"  # Optional - overrides default "Dear Sir or Madam,"
+letter-greeting: "Dear Prof. Dr. Doe,"  # Optional - overrides default "Dear Sir or Madam,"
 #letter-closing: "Best regards,"  # Optional - overrides default "Sincerely,"
+letter-closing: "Best regards,"
 
 format: fub-letter-pdf
 ---
-
-Dear Prof. Dr. Doe,
-
 I am writing to express my strong interest in the postdoctoral research position advertised by your department. I believe my research experience and expertise make me an excellent candidate for this role.
 
 Currently, I work as a research associate at the Institute for Sample Studies at Freie Universität Berlin. My research focuses on **experimental methods** and *theoretical modeling* in the field of example sciences.
