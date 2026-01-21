@@ -21,3 +21,6 @@ texput.log
 fu-logo.pdf
 logo.pdf
 signature.pdf
+
+# Quarto/pandoc build artifacts
+*_files/
