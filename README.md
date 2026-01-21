@@ -7,6 +7,12 @@ The template uses the FU Berlin brand colors, fonts, and logo, with a profession
 - Sender information block in the upper right header
 - Proper spacing and typography following university brand guidelines
 
+## Examples
+
+**See the template in action:**
+- 🇬🇧 [English example letter](english/_output/template.pdf) - Research position application
+- 🇩🇪 [German example letter](german/_output/template.pdf) - Bewerbung um Forschungsposition
+
 ## Features
 
 - ✅ Official FU Berlin corporate design (colors, logo, layout)
